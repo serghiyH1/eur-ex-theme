@@ -1,0 +1,46 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid;
+	border-color: $color_theme_2;
+	border-radius: 3px;
+	background: $color__background-button;
+	color: $white;
+	box-shadow: 0 0 6px rgba(0,0,0,0);
+	line-height: 1;
+	padding: 0.85em 2em;
+	font-size: 1em;
+	cursor: pointer;
+	font-weight: 300;
+	transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+	text-decoration: none;
+	&:hover {
+		border-color: $color__border-button-hover;
+		background-color: $color__background-button-hover;
+		box-shadow: 0 0 6px rgba(0,0,0,0.3);
+		color: $white;
+	}
+	&:focus {
+		border-color: $color__border-button-focus;
+		color: $white;
+	}
+	&:active{
+		border-color: $color_theme_2;
+		background: $color__background-button;
+		color: $white;
+	}
+	&:visited{
+		color: $white;
+	}
+	&.button-type-2{
+		padding: 0.64em 2em;
+	}
+	&.inline{
+		display: inline-flex;
+	}
+}

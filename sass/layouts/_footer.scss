@@ -1,0 +1,123 @@
+.pre-footer{
+  padding: 1em 0 0 0;
+  @media (min-width: 992px){
+    padding: 1em 0 2.3em 0;
+  }
+  .footer-menu-col{
+    display: none;
+    margin-bottom: 3rem;
+    width: 100%;
+    @media (min-width: 992px){
+      display: block;
+    }
+    &.col-auto{
+      flex: unset;
+      text-align: center;
+      @media (min-width: 460px){
+        flex: 1;
+        text-align: left;
+      }
+    }
+    &.form-button-col{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      min-width: 25rem;
+      @media (min-width: 1248px){
+        margin-right: 7rem;
+      }
+      .form-button-col-heading{
+        margin-top: 0.5em;
+        margin-bottom: 1.1em;
+        font-size: 1.31em;
+        @media (min-width: 992px){
+          font-size: 1.25em;
+          margin-top: 0.65em;
+          margin-bottom: 1.2em;
+        }
+      }
+      .button{
+        display: inline-block;
+        margin-bottom: 1.6em;
+        &.calculate{
+          max-width: 18.4rem;
+          padding: 0.64em 2.55em;
+        }
+      }
+    }
+  }
+}
+.site-footer{
+  padding: 1em 0;
+  a{
+    text-decoration: none;
+    color: $white;
+    &:hover{
+      color: $color_theme_2;
+    }
+  }
+}
+.pre-footer,
+.site-footer{
+  background-color: #002148;
+  color: $white;
+  .footer-menu-heading{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    white-space: nowrap;
+    @media (min-width: 992px){
+      margin-top: 0.7em;
+      margin-bottom: 1.2em;
+    }
+  }
+  a{
+    text-decoration: none;
+  }
+  .footer-menu{
+    .menu-item{
+      margin-bottom: 1.3em;
+      @media (min-width: 992px){
+        margin-bottom: 1.4em;
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    a{
+      color: $white;
+      text-decoration: none;
+      &:hover{
+        color: $color_theme_2;
+      }
+    }
+  }
+  .footer-menu-col{
+    flex: 1;
+    li{
+      a{
+        white-space: nowrap;
+      }
+    }
+    &.footer-menu-col-2{
+      //min-width: 27rem;
+    }
+  }
+  .footer-links-col{
+    @media (min-width: 992px){
+      text-align: right;
+    }
+    .links-wrap{
+      display: block;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      @media (min-width: 992px){
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      margin-right: 2em;
+    }
+  }
+}

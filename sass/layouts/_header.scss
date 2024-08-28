@@ -1,0 +1,72 @@
+.site-header{
+  padding: 0.3rem 0 .1rem 0;
+  background-color: $color_theme_1;
+  z-index: 100;
+
+  .site-header--row{
+    align-items: center;
+    justify-content: space-between;
+    @media (min-width: 1248px){
+      justify-content: flex-end;
+    }
+  }
+
+  .site-branding{
+    display: flex;
+    img{
+      display: block;
+      min-width: 99px;
+    }
+  }
+
+  .header-navigation-col{
+    display: flex;
+    justify-content: flex-end;
+    @media (min-width: 1248px){
+      align-items: center;
+    }
+  }
+
+  .contacts-col{
+    //order: 1;
+    @media (min-width: 768px){
+      margin: 0 2.5rem;
+    }
+    @media (min-width: 1248px){
+      order: 2;
+    }
+    .contacts-tel{
+      display: flex;
+      align-items: center;
+      padding: 1.8rem 1.6rem 1.8rem 0;
+      margin-top: -0.2em;
+      font-size: 0.8em;
+      @media (min-width: 360px){
+        font-size: 1em;
+      }
+      @media (min-width: 1248px){
+        margin-top: 0;
+      }
+      .phone-icon{
+        margin-right: 0.5em;
+      }
+    }
+  }
+
+  .header-lang{
+    order: 2;
+    @media (min-width: 1248px){
+      order: 3;
+    }
+  }
+  
+  a{
+    text-decoration: none;
+    color: $color_theme_4;
+    &:hover,
+    &.focus{
+      color: $color_theme_2;
+    }
+  }
+
+}

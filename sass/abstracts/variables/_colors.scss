@@ -1,0 +1,59 @@
+$color_theme_1: rgba(250, 249, 249, 1);
+$color_theme_2: rgba(254, 85, 6, 1); // orange
+$color_theme_2_2: rgba(208, 69, 4, 1);
+$color_theme_2_02: rgba(254, 85, 6, 0.2);
+$color_theme_2_03: rgba(254, 85, 6, 0.3);
+$color_theme_2_09: rgba(254, 85, 6, 0.9);
+$color_theme_3: rgba(161, 159, 158, 1); // gray
+$color_theme_4: rgba(90, 88, 87, 1); // dark gray
+$color_theme_5: rgba(2, 87, 149, 1); // dark blue
+$color_theme_6: #d3cfcc; // Light gray
+$color_theme_7: #001c31;
+$color_theme_8: #e5eaee;
+$color_theme_9: #eae6e4;
+$color_theme_10: rgba(0, 33, 72, 1);
+
+.gray{
+  color: $color_theme_3;
+}
+.light-gray{
+  color: $color_theme_6;
+}
+
+.bg-super-light-gray{
+  background-color: #faf9f9;
+}
+
+$white: rgba(255, 255, 255, 1);
+$black: rgba(0, 0, 0, 1);
+$transparent_white: rgba(255, 255, 255, 0);
+$transparent_black: rgba(0, 0, 0, 0);
+
+.c-white{
+  color: $white;
+}
+.c-black{
+  color: $black;
+}
+
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: $color_theme_2;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: $color_theme_4;
+$color__text-input-focus: $color_theme_4;
+$color__link: $color_theme_2; //royalblue
+$color__link-visited: $color_theme_2; //purple
+$color__link-hover: $color_theme_2_2; //midnightblue
+$color__text-main: #373737;
+
+$color__border-button: $color_theme_2;
+$color__border-button-hover: $color_theme_2_2;
+$color__background-button-hover: $color_theme_2_2;
+$color__border-button-focus: $color_theme_2;
+$color__border-input: #ccc;
+$color__border-abbr: #666;

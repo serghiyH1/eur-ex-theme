@@ -1,0 +1,23 @@
+.icon{
+	display: inline-block;
+	background-repeat: no-repeat;
+}
+
+.icon-chevron-right{
+	height: 1.2rem;
+	width: 0.7rem;
+	background-image: url('../images/icons/arrw_clps_right.svg');
+	background-size: contain;
+}
+
+.phone-icon{
+	height: 1.6rem;
+	width: 1.6rem;
+	background-image: url('../images/icons/phone-1.svg');
+}
+
+.info-icon{
+	height: 1.6rem;
+	width: 1.6rem;
+	background-image: url('../images/icons/gray/info_m.svg');
+}

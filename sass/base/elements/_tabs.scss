@@ -1,0 +1,141 @@
+.tabs{
+	.tabs-list{
+		display: flex;
+		flex-wrap: wrap;
+		.list-item{
+			width: 100%;
+			img{
+				max-width: 2.6rem;
+				filter: grayscale(1);
+				transition: filter 0.3s ease;
+				@media (min-width: 576px){
+					max-width: 5rem;
+				}
+			}
+			@media (min-width: 576px){
+				flex: 1;
+				width: auto;
+			}
+			a{
+				display: flex;
+				align-items: center;
+				padding: 1.05em 0.7em;
+				border-bottom: 2px solid;
+				border-color: $color_theme_3;
+				height: 100%;
+				font-size: 0.95em;
+				text-decoration: none;
+				@media (min-width: 576px){
+					flex-direction: column;
+					justify-content: center;
+					padding: 1em 0.5em;
+					font-size: 1em;
+				}
+				&:hover{
+					background-color: $color_theme_1;
+					border-color: $color_theme_2;
+				}
+				img,
+				.text{
+					display: inline-block;
+				}
+				img{
+					margin-right: 0.75em;
+					@media (min-width: 576px){
+						margin-right: 0.5em;
+						margin-bottom: 0.85em;
+					}
+				}
+				.text{
+					margin-top: 0;
+					margin-bottom: 0;
+					color: $black;
+					font-size: 1.1em;
+					@media (min-width: 768px){
+						text-align: center;
+					}
+					@media (min-width: 992px){
+						font-size: 1.35em;
+						text-align: center;
+					}
+				}
+			}
+			&.ui-tabs-active,
+			&.ui-state-active{
+				a{
+					border-color: $color_theme_2;
+				}
+				img{
+					filter: grayscale(0);
+				}
+			}
+		}
+	}
+	.tab-content{
+		padding-top: 1.5em;
+	}
+	.tabs-sub-list{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 1.55rem;
+		@media (min-width: 576px){
+			gap: 2rem;
+		}
+		.list-item{
+			width: 100%;
+			padding: 0.5em;
+			@media (min-width: 576px){
+				width: unset;
+				flex: 1;
+				padding: 1em;
+			}
+			@media (min-width: 992px){
+				padding: 1em 1em 1.2em 1em;
+			}
+			.list-item-heading{
+				display: block;
+				margin-bottom: 0.65em;
+				text-align: center;
+				@media (min-width: 576px){
+					margin-bottom: 1em;
+				}
+			}
+			.list-item-text{
+				font-size: 0.95em;
+				margin-bottom: 0.25em;
+				line-height: 1.1;
+				@media (min-width: 576px){
+					font-size: 1em;
+					margin-bottom: 1em;
+				}
+			}
+		}
+		ul,
+		ol{
+			margin-bottom: 1em;
+			padding-left: 1.25em;
+			&.flex{
+				padding-left: 0;
+				li{
+					margin-left: 1em;
+					&:first-child{
+						margin-left: 0;
+					}
+				}
+			}
+			li{
+				margin-bottom: 0.5em;
+				img{
+					margin-right: 0.5em;
+				}
+			}
+		}
+		ul{
+			list-style: disc;
+		}
+		ol{
+			list-style: decimal;
+		}
+	}
+}

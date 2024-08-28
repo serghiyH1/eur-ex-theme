@@ -1,0 +1,260 @@
+.calculation-wrap{
+  position: relative;
+  background-color: $white;
+  &.card{
+    padding: 2.6rem 1.5rem 1.5rem 1.5rem;
+    @media (min-width: 1248px){
+      padding: 2.3rem 2.2rem;
+    }
+  }
+  .heading-col{
+    position: relative;
+  }
+  .calculation-heading{
+    margin-top: 0;
+    margin-bottom: 1.1em;
+    font-size: 1em;
+    @media (min-width: 1248px){
+      font-size: 1.3em;
+      margin-bottom: 0.7em;
+    }
+  }
+  .calc-toggler{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 1.2rem;
+    height: 1.6rem;
+    width: 1.6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    background-image: url( '../images/icons/arrw_clps_up.svg' );
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  .calculation-select{
+    position: relative;
+    margin-bottom: 1em;
+    @media (min-width: 576px){
+      margin-bottom: 0;
+    }
+    .label{
+      position: absolute;
+      font-weight: 600;
+      color: $color_theme_4;
+    }
+  }
+
+  .calc-opening-col{
+    display: none;
+  }
+
+  .downloading-checkbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (min-width: 768px){
+      flex-direction: row;
+    }
+    li{
+      display: flex;
+      align-items: center;
+      flex: 1;
+      padding: 0.5em;
+      margin-bottom: 0.5em;
+      border: 1px solid;
+      border-color: $color_theme_6;
+      border-radius: 0.6rem;
+      box-shadow: 0 0 3px rgba(0,0,0,0);
+      cursor: pointer;
+      @media (min-width: 768px){
+        margin-right: 1em;
+      }
+      &:hover{
+        background-color: $color_theme_1;
+        box-shadow: 0 0 6px rgba(0,0,0,0.3);
+      }
+      &:active,
+      &.active{
+        border-color: $color_theme_2;
+      }
+      img{
+
+      }
+      .text{
+        margin-left: 0.5em;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+      @media (min-width: 1248px){
+        padding: 1em;
+      }
+    }
+  }
+
+  .downloading-ways-wrap{
+    padding-top: 5rem;
+    display: none;
+  }
+  .downloading-types-wrap{
+    padding-top: 5rem;
+  }
+
+  .transporting-types-prices{
+    .sea,
+    .avia,
+    .train{
+      display: none;
+      .delivery-cost{
+        margin-left: 0.5em;
+        margin-right: 2em;
+      }
+      &.active{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+    }
+    .delivery-info-price{
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .delivery-cost-wrap{
+    position: relative;
+    margin-top: 2em;
+    padding: 1em;
+    font-size: 0.85em;
+    &:before,
+    &:after{
+      content: '';
+      position: absolute;
+      right: 0;
+      left: 0;
+      height: 1px;
+    }
+    &:before{
+      top: 0;
+      border-top: 1px dotted $color_theme_6;
+    }
+    &:after{
+      bottom: 0;
+      border-bottom: 1px dotted $color_theme_6;
+    }
+    .delivery-cost{
+      font-size: 1.2em;
+      font-weight: 600;
+      color: $color_theme_2;
+    }
+  }
+  .delivery-note-wrap{
+    display: none;
+    font-size: 0.85em;
+    margin-top: 0.5em;
+    .delivery-add-text{
+      display: none;
+      &.active{
+        display: inline;
+      }
+    }
+  }
+
+  .delivery-contacts{
+    display: flex;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    @media (min-width: 1248px){
+      margin-top: 5em;
+    }
+    .info-text{
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-top: 0;
+      .info-icon{
+        width: 2.5em;
+        min-width: 20px;
+      }
+      .text{
+        padding-left: 0.5em;
+        border-left: 2px solid $color_theme_6;
+      }
+      a{
+        display: inline-block;
+        margin-top: 0.33em;
+        text-decoration: none;
+        color: $color_theme_4;
+        &:hover{
+          color: $color_theme_2;
+        }
+        .phone-icon{
+          margin-right: 0.5em;
+        }
+      }
+    }
+    .messengers{
+      .messengers-list{
+        max-width: 20rem;
+        @media (min-width: 992px){
+          margin-bottom: 0;
+        }
+        .list-item{
+          img{
+            min-width: 3.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .your-contacts{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 1em;
+    @media (min-width: 768px){
+      flex-direction: row;
+    }
+    label{
+      position: relative;
+      padding-top: 2rem;
+      margin-right: 1em;
+      &:last-child{
+        margin-right: 0;
+      }
+      span{
+        &.field-name{
+          position: absolute;
+          top: 2.5rem;
+          left: 1rem;
+          font-weight: 600;
+          color: $color_theme_4;
+        }
+        &.wpcf7-form-control-wrap{
+          display: block;
+          input{
+            background-color: $transparent_white;
+            &:hover{
+              background-color: rgba(238,238,238,0.5);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .submit-wrap{
+    margin-top: 3em;
+    input[type="submit"]{
+      @media (min-width: 1248px){
+        min-width: 24.8rem;
+      }
+    }
+  }
+
+}

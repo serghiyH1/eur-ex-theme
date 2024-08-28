@@ -1,0 +1,71 @@
+.gallery {
+	margin-bottom: 1.5em;
+	display: grid;
+	grid-gap: 1.5em;
+}
+
+.gallery-item {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	min-height: 10.5rem;
+	border-radius: 0.6rem;
+	background-color: $white;
+	box-shadow: 0 0 12px rgba(0,0,0,.15);
+	transition: box-shadow 0.3s ease;
+	&:hover,
+	&.hover{
+		box-shadow: 0 0 6px rgba(0,0,0,.3);
+	}
+	&.no-hover{
+		box-shadow: 0 0 12px rgba(0,0,0,.15);
+	}
+}
+
+// Loops to enumerate the classes for gallery columns.
+@for $i from 2 through 9 {
+
+	.gallery-columns-#{$i} {
+		grid-template-columns: repeat($i, 1fr);
+		@media (min-width: 1400px){
+			grid-template-columns: repeat($i, 1fr);
+		}
+	}
+	.gallery-columns-8,
+	.gallery-columns-7,
+	.gallery-columns-6,
+	.gallery-columns-5{
+		grid-template-columns: repeat(2, 1fr);
+		@media (min-width: 992px){
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+	.gallery-columns-8{
+		@media (min-width: 1400px){
+			grid-template-columns: repeat(8, 1fr);
+		}
+	}
+	.gallery-columns-7{
+		@media (min-width: 1400px){
+			grid-template-columns: repeat(7, 1fr);
+		}
+	}
+	.gallery-columns-6{
+		@media (min-width: 1400px){
+			grid-template-columns: repeat(6, 1fr);
+		}
+	}
+	.gallery-columns-5{
+		@media (min-width: 1400px){
+			grid-template-columns: repeat(5, 1fr);
+		}
+	}
+}
+
+.gallery-caption {
+	display: block;
+}

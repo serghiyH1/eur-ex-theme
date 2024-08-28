@@ -1,0 +1,131 @@
+.page-template-default{
+  .page{
+    padding-top: 4rem;
+  }
+  .entry-content{
+    padding-top: 2rem;
+    padding-bottom: 9rem;
+  }
+  .post-thumbnail{
+    @media (min-width: 768px) {
+      max-width: 48%;
+      margin-right: 2%;
+      float: left;
+    }
+  }
+}
+
+.page{
+  .entry-header{
+    padding-top: 2.5em;
+  }
+}
+
+.services-columns{
+  >.container{
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.text-images-blocks{
+  background-color: $color_theme_1;
+  padding-top: 11rem;
+  .text-image-row{
+    margin-bottom: 6rem;
+
+    .image-col-float{
+      margin-top: 1em;
+      margin-bottom: 3rem;
+      float: left;
+      padding-right: 4rem;
+    }
+
+    .image-col{
+      margin-bottom: 2rem;
+      .image-link{
+        display: block;
+      }
+      img{
+        display: block;
+        width: 100%;
+      }
+    }
+    .text-col{
+      @media (min-width: 992px){
+        .desc,
+        .heading{
+          padding-left: 4rem;
+        }
+      }
+      .link{
+        text-decoration: none;
+      }
+      .heading{
+        margin-top: 0;
+      }
+      .desc{
+        
+      }
+    }
+
+    &:nth-child(even){
+      @media (min-width: 992px){
+        .image-col-float{
+          float: right;
+          padding-left: 4rem;
+        }
+        .image-col{
+          order: 2;
+        }
+        .text-col{
+          order: 1;
+          .desc,
+          .heading{
+            padding-left: 0;
+            padding-right: 4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Contacts
+.page-template-page-contacts{
+  .entry-content{
+    padding-bottom: 6rem;
+    .contacts-heading{
+      margin-bottom: 1em;
+    }
+    .contact-wrap{
+      margin-bottom: 1em;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      img{
+        margin-right: 0.85rem;
+      }
+      .address{
+        display: flex;
+        align-items: center;
+        margin: 0;
+      }
+      a{
+        color: #373737;
+        &:hover{
+          color: $color_theme_2;
+        }
+      }
+      &.map-wrap{
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}
+
+.bg-cover{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

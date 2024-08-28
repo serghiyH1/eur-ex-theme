@@ -1,0 +1,65 @@
+.modal{
+	display: none;
+	&.fancybox__content{
+		padding: 3.4rem 2.4rem 2.4rem 2.4rem;
+		border-radius: 0.4rem;
+	}
+	&.modal-contact-us{
+		.form-wrap{
+			max-width: 28rem;
+			.subheading{
+				margin-bottom: 1em;
+			}
+			label{
+				display: block;
+				margin-bottom: 0.5em;
+				>span{
+					display: block;
+				}
+			}
+			.button{
+				display: block;
+				width: 100%;
+				margin-top: 1em;
+			}
+			.wpcf7-response-output{
+				margin-top: 1em;
+				font-size: 0.85em;
+				color: $color_theme_4;
+				&.wpcf7-mail-sent-ok{
+					color: green;
+				}
+				&.wpcf7-validation-errors{
+					color: red;
+				}
+			}
+		}
+	}
+}
+
+.fancybox__container {
+	z-index: 99999999 !important;
+	.fancybox__backdrop{
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.fancybox__content{
+		>.f-button{
+			&.is-close-btn{
+				top: 0.8rem;
+				right: 0.8rem;
+				color: #9DA2A6;
+				border-radius: 50%;
+				background: $transparent_white;
+				&:hover{
+					color: red;
+					transform: rotate(90deg);
+					box-shadow: none;
+				}
+				&:active{
+					background: $color_theme_1;
+					color: $white;
+				}
+			}
+		}
+	}
+}

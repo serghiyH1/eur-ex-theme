@@ -1,0 +1,11 @@
+html{
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.6rem;
+	background: $color__background-body; // Fallback for when there is no custom background color defined.
+}
+
+.site-main{
+	position: relative;
+}
